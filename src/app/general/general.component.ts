@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import{AppserviceService} from '../appservice.service';
 
 @Component({
   selector: 'app-general',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GeneralComponent implements OnInit {
 
-  constructor() { }
+  generalnews:any[]=[];
+  constructor(public _AppserviceService:AppserviceService) {
+    this._AppserviceService.getPosts().subscribe((data)=>{
+      
+      this.generalnews=data.articles;
+    });
+    
+   }
 
   ngOnInit(): void {
   }

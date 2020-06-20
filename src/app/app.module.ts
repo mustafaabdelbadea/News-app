@@ -7,6 +7,11 @@ import { GeneralComponent } from './general/general.component';
 import { SportsComponent } from './sports/sports.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
+import {HttpClientModule} from '@angular/common/http';
+import { HealthComponent } from './health/health.component';
+import { BusinessComponent } from './business/business.component';
+import { ScienceComponent } from './science/science.component';
+import { TechnologyComponent } from './technology/technology.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +19,16 @@ import { FooterComponent } from './footer/footer.component';
     GeneralComponent,
     SportsComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    HealthComponent,
+    BusinessComponent,
+    ScienceComponent,
+    TechnologyComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

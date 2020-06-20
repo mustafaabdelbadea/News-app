@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.com-shadow:hover{
+    box-shadow: gray 0px 0px 10px 3px;
+    transition: all 0.5s;
+  }
+  

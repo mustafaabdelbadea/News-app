@@ -1,1 +1,15 @@
-<p>general works!</p>
+
+<div class="container ">
+    <div class="row " >
+        
+        <div class="col-md-4 py-3 com-shadow" *ngFor='let gen of generalnews'>
+           <div class="last">
+                <img src="{{gen.urlToImage}}" class="img-fluid" alt="image">
+                <a href="{{gen.url}}">{{gen.title}}</a>
+                <p>{{gen.description}}</p>
+              
+           </div>
+           
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+
+<div class="container ">
+    <div class="row " >
+        
+        <div class="col-md-4 py-3 com-shadow " *ngFor='let tech of technologynews'>
+           <div class="last">
+                <img src="{{tech.urlToImage}}" class="img-fluid" alt="image">
+                <a href="{{tech.url}}">{{tech.title}}</a>
+                <p>{{tech.description}}</p>
+              
+           </div>
+           
+        </div>
+    </div>
+</div>
